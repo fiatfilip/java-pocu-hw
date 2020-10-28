@@ -1,5 +1,7 @@
 package compositionoverinheritance;
 
+import javaoop.Person;
+
 public class Main {
     public static void main(String[] args) {
         Rectangle r1 = new Rectangle(2, 3);
@@ -13,5 +15,6 @@ public class Main {
 
         Square2 s2 = new Square2(4);
         System.out.println(s2.getArea());
+
     }
 }

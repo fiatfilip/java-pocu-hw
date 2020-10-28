@@ -7,7 +7,7 @@ public class Person {
 
     private boolean married = true;
 
-    Person(){
+    public Person(){
 //        this.name = "John Doe";
 //        this.weight = 80;
 //        this.age = 50;
@@ -38,6 +38,18 @@ public class Person {
         this.married = married;
     }
 
+    private void privateMethod(){
+
+    }
+
+    void packageMethod(){
+
+    }
+
+    protected void protectedMethod(){
+
+    }
+
     @Override
     public String toString() {
         return "Person{" +
@@ -63,6 +75,9 @@ public class Person {
 
         Person matei = new Person("Domnul", "Matei", 65);
         matei.setMarried(false);
+        matei.privateMethod();
+        matei.packageMethod();
+        matei.protectedMethod();
         System.out.println(matei.toString());
 
         try {
@@ -71,5 +86,14 @@ public class Person {
         } catch (Exception e){
             System.out.println(e.getMessage());
         }
+    }
+}
+
+class Other{
+    public static void main(String[] args) {
+        Person person = new Person();
+        // person.privateMethod();
+        person.packageMethod();
+        person.protectedMethod();
     }
 }
