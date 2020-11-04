@@ -16,6 +16,6 @@ public class OperationsTest {
         double b = randomizer.nextDouble();
         double result = (new Operations()).addition(a, b);
         // a+b == result
-        Assertions.assertEquals( 1+ a + b, result);
+        Assertions.assertEquals( a + b, result);
     }
 }
