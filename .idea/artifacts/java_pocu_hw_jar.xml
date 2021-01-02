@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="java-pocu-hw:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/java_pocu_hw_jar</output-path>
+    <root id="archive" name="java-pocu-hw.jar">
+      <element id="module-output" name="java-pocu-hw" />
+    </root>
+  </artifact>
+</component>
